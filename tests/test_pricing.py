@@ -56,7 +56,7 @@ def test_volume_discount_above_large_threshold():
 def test_coupon_discount_known_code():
     assert coupon_discount("WELCOME10") == 0.10
     assert coupon_discount("SUMMER20") == 0.20
-    assert coupon_discount("VIP15") == 0.15
+    assert coupon_discount("NEOFACTO15") == 0.15
 
 
 def test_coupon_discount_unknown_code():

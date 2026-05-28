@@ -1,0 +1,36 @@
+## Prompt 1
+
+Explore this repository.
+
+Explain:
+1. the main modules,
+2. the pricing flow,
+3. the test strategy,
+4. the files likely involved in changing discount behavior.
+
+Do not modify any files.
+
+
+## Prompt 2
+
+We need to add this rule:
+
+Premium customers get an additional 5% discount,
+but total discount must never exceed 30%.
+
+Propose a minimal implementation plan.
+List the files you expect to change.
+Do not edit yet.
+
+
+## Prompt 3
+
+Implement the plan.
+
+Constraints:
+- Keep the diff minimal.
+- Do not change public APIs unless necessary.
+- Add tests for premium discount.
+- Add tests for the 30% cap.
+- Ensure non-premium behavior is unchanged.
+- Run the test suite.

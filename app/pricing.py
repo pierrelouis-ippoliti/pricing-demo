@@ -6,14 +6,14 @@ TAX_RATE = 0.20
 
 def calculate_price(order: Order) -> dict:
     """
-    Calculate the full price breakdown for an order.
+    Calculate the full price breakdown for an order
 
     Steps:
-      1. Compute subtotal from order items.
-      2. Apply discounts (volume + coupon, capped).
-      3. Apply tax on the discounted amount.
+      1. Compute subtotal from order items
+      2. Apply discounts (volume + coupon, capped)
+      3. Apply tax on the discounted amount
 
-    Returns a dict with: subtotal, discount_rate, discount_amount, tax, total.
+    Returns a dict with: subtotal, discount_rate, discount_amount, tax, total
     """
     subtotal = order.subtotal
 
@@ -27,8 +27,10 @@ def calculate_price(order: Order) -> dict:
         }
 
     discount_rate = apply_discounts(order)
+    
     discount_amount = subtotal * discount_rate
     after_discount = subtotal - discount_amount
+    
     tax = after_discount * TAX_RATE
     total = after_discount + tax
 
