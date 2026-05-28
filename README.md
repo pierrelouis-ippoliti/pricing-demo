@@ -13,7 +13,7 @@ This service calculates order prices by applying discount rules and tax.
 | Volume      | 5–9 items              | 10%  |
 | Volume      | 10+ items              | 15%  |
 | Coupon      | `WELCOME10`            | 10%  |
-| Coupon      | `NEOFACTO15`                | 15%  |
+| Coupon      | `NEOFACTO15`           | 15%  |
 | Coupon      | `SUMMER20`             | 20%  |
 
 Discounts are combined and capped at a maximum rate.
